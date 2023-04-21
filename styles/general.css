@@ -1,0 +1,29 @@
+p {
+    font-family: 'proxima-nova', sans-serif;
+    margin: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+p:hover {
+    transform: scale(1.02);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+@media only screen and (max-width: 400px){
+    
+}
