@@ -288,11 +288,13 @@
                     <div class="contact-section-header">
                         <p class="contact-section-header-p">Send me a message!</p>
                     </div>
-                    <form class="contact-inputs" ref={form} onsubmit={sendEmail}>
-                        <input class="input-name" type="text" id="name" placeholder="Name" required>
-                        <input class="input-email" type="text" id="email" placeholder="Email" required>
-                        <input class="input-message" type="text" id="message" placeholder="Message" required>
-                        <button class="send-button">Send</button>
+                    <form class="contact-inputs" action="https://formsubmit.co/anosfra21@gmail.com" method="POST">
+                        <input class="input-name" type="text" id="name" name="name" placeholder="Name" required>
+                        <input class="input-email" type="text" id="email" name="email" placeholder="Email" required>
+                        <input class="input-message" type="text" id="message" name="message" placeholder="Message" required>
+                        <button class="send-button" type="submit">Send</button>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Portfolio contact form email">
                     </form>
                 </div>
             </div>
