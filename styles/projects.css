@@ -20,7 +20,7 @@
   display: flex;
   background-color: rgb(39, 33, 28);
   width: 1000px;
-  height: 1000px;
+  height: 1100px;
   justify-content: start;
   flex-direction: column;
   text-align: center;
@@ -33,7 +33,7 @@
 .projects {
   display: flex;
   width: 1000px;
-  height: 600px;
+  height: 750px;
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
@@ -186,6 +186,11 @@
 
 .proji-5 {
   height: 370px;
+  justify-content: space-between;
+}
+
+.proji-6 {
+  height: 560px;
   justify-content: space-between;
 }
 
