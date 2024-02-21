@@ -50,8 +50,8 @@
   flex-direction: row;
   vertical-align: bottom;
   position: relative;
-  transition: 
-  transform 0.2s ease-in-out;
+  transition:
+    transform 0.2s ease-in-out;
   cursor: pointer;
 }
 
@@ -149,13 +149,13 @@
   transform: scale(1.4);
 }
 
-.active{
+.active {
   z-index: 10;
   display: block;
   opacity: 1;
 }
 
-.project:hover .project-image{
+.project:hover .project-image {
   margin: 0;
   width: 400px;
   height: 600px;
@@ -180,7 +180,7 @@
 }
 
 .proji-4 {
-  height: 350px; 
+  height: 350px;
   justify-content: space-between;
 }
 
@@ -194,10 +194,14 @@
   justify-content: space-between;
 }
 
+.proji-7 {
+  height: 650px;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1200px) {
   .project-card {
     height: 1200px;
     margin-top: 5rem;
   }
 }
-
