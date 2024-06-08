@@ -3,6 +3,8 @@ const project = document.querySelectorAll('.project')
 const projectsImgs = document.querySelectorAll('.project-image');
 const allProjects = document.querySelector('.project-card');
 
+
+
 function ProjectTransitions(){
   //Project click active class
   for(let i = 0; i < project.length; i++){
@@ -34,5 +36,6 @@ function ProjectTransitions(){
     }
   })
 }
+
 
 ProjectTransitions();

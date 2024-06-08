@@ -1,7 +1,7 @@
 .project-card {
   display: flex;
   background-color: rgb(32, 27, 23);
-  height: 1300px;
+  height: 1700px;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
@@ -16,11 +16,63 @@
   text-align: center;
 }
 
+/*tabs*/
+.tabContainer {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  height: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.buttonContainer .tab-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 191, 155);
+  border-radius: 15px;
+  transition: 
+  transform 0.2s ease-in-out;
+}
+
+.tabContainer .buttonContainer button{
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+}
+
+.tab-btn:hover {
+  transform: scale(1.04);
+}
+
+.buttonContainer .tab-btn.active-tab {
+  background-color: rgb(247, 168, 123);
+}
+
+.tabPanel {
+  display: none;
+}
+
+.tabPanel.active-tab {
+  display: block;
+}
+
+/*projects*/
 .project-div1 {
   display: flex;
   background-color: rgb(39, 33, 28);
   width: 1000px;
-  height: 1100px;
+  height: 1250px;
   justify-content: start;
   flex-direction: column;
   text-align: center;
@@ -30,11 +82,36 @@
   transform: translateY(-50px);
 }
 
-.projects {
+.proj-front {
+  left: 0;
+  position: fixed;
+  height: 200px;
+  width: 200px;
+}
+
+.web-projects {
   display: flex;
   width: 1000px;
-  height: 750px;
-  justify-content: space-between;
+  height: 450px;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+
+.soft-projects {
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hard-projects {
+  display: flex;
+  width: 1000px;
+  height: 150px;
+  justify-content: space-around;
   flex-direction: column;
   text-align: center;
 }
@@ -105,6 +182,10 @@
   transform: scale(1.7);
 }
 
+.project-images {
+  width: 400px;
+}
+
 .project-image {
   display: block;
   align-items: center;
@@ -113,11 +194,24 @@
   width: 400px;
   margin-right: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
   background-color: rgb(32, 27, 23);
   border-radius: 10px;
   transition: height 0.5s, opacity 0.5s;
   transition-delay: 0.1s;
   opacity: 0;
+}
+
+.project-video {
+  width: 240px;
+  height: 240px;
+  border-radius: 30px;
+  transition: 
+  transform 0.2s ease-in-out;
+}
+
+.project-video:hover {
+  transform: scale(1.2);
 }
 
 .image-div {
@@ -191,6 +285,16 @@
 
 .proji-6 {
   height: 560px;
+  justify-content: space-between;
+}
+
+.proji-7 {
+  height: 700px;
+  justify-content: space-between;
+}
+
+.proji-8 {
+  height: 650px;
   justify-content: space-between;
 }
 
