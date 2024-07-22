@@ -92,7 +92,7 @@
 .web-projects {
   display: flex;
   width: 1000px;
-  height: 600px;
+  height: 750px;
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
